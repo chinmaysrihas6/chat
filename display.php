@@ -102,10 +102,44 @@
         }*/
     </style>
 
+<!-- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+  <link type="text/css" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+  <!-- <link rel="stylesheet" href="css/fontstyle1.css"> Select fontstyle(.css) -->
+  <link rel="stylesheet" href="ChatUI.css">
+  <!-- <link rel="stylesheet" href="css/semantic.min.css"> -->
+
+  <!-- chat preview CSS -->
+  <link rel="stylesheet" href="chat.css" type="text/css">
+  <!-- Scripts -->
+  <script src="jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+
+  <script src="chat.js" type="text/javascript"></script>
+
 </head>
 
 <body style="height: 1100px;">
     <div class="mainbody">
+
+         <!-- Top NavBar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end"> <a class="navbar-brand ml-5"
+      href="index.html" style="padding-left: 38rem;">Chatbot for mental health conversation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+      </ul>       
+    </div>
+  </nav>
+
+
         <nav class="navbar navbar-expand-lg navbar-dark position-fixed" id="navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,6 +157,7 @@
         </nav>
         <div class="progress-bar" id="progressbar">
         </div>
+
         <div class="post" style="margin-top: 70px;">
             <h1 class="one">Our Milestones</h1><br>
             <div class="row">
@@ -158,6 +193,36 @@
                 </div>
             </div><br><br>
         </div>
+
+        <!--chat bot preview-->
+  <div id="body">
+    <div id="chat-circle" class="btn btn-raised">
+      <div id="chat-overlay"></div>
+      <i class="large comment outline icon"></i>
+    </div>
+
+    <div class="chat-box">
+      <div class="chat-box-header">
+        ChatBot
+        <span class="chat-box-toggle"><i class="close icon"></i></span>
+      </div>
+      <div class="chat-box-body">
+        <div class="chat-box-overlay">
+        </div>
+        <div class="chat-logs">
+
+        </div><!--chat-log -->
+      </div>
+      <div class="chat-input">
+        <form>
+          <input type="text" id="chat-input" placeholder="Send a message..." />
+          <button type="submit" class="chat-submit" id="chat-submit"><i
+              class="large blue paper plane icon"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
         <footer class="f1">
             <div class="img1"
                 style="background-image: url(f2.jpg); display: flex; justify-content: center; align-items: center;">
@@ -197,6 +262,7 @@
                     </div>
                 </div>
             </div>
+
         </footer>
 
 
